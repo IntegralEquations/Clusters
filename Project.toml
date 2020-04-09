@@ -1,0 +1,20 @@
+name = "Clusters"
+uuid = "1a0635d8-fcb2-4b4a-a3f6-88094c56b95c"
+authors = ["Luiz M. Faria <maltezfaria@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+AbstractTrees = "1520ce14-60c1-5f80-bbc7-55ef81b5835c"
+GeometryTypes = "4d00f742-c7ba-57c2-abde-4428a4b178cb"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+RecipesBase = "3cdcf5f2-1ef4-517c-9805-6587b60abb01"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+
+[compat]
+julia = "^1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

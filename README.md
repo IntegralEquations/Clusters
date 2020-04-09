@@ -51,9 +51,9 @@ You should see something like this:
 
 ![BlockTree](docs/src/figures/blocktree.png "Block tree")
 
-If you have added `ParametricSurfaces`, a more interesting example is:
+If you have added [ParametricSurfaces](https://github.com/IntegralEquations/ParametricSurfaces), a more interesting example is:
 ```julia
-    using Clusters, GeometryTypes, Plots
+    using Clusters, ParametricSurfaces, Plots
     geo           = Bean()
     quad          = TensorQuadrature((10,10),geo)
     pts           = quad.nodes |> vec

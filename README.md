@@ -29,7 +29,6 @@ This package is mostly aimed at constructing the various cluster trees which are
     Splitters = subtypes(Clusters.AbstractSplitter)
     p = []
     for Splitter in Splitters
-        @info Splitter
         spl = Splitter(nmax=10)
         clt = ClusterTree(pts,spl)
         push!(p,plot(clt,title=string(spl)))

@@ -10,7 +10,7 @@ using Statistics: median
 using AbstractTrees
 using RecipesBase
 
-import AbstractTrees: children
+import AbstractTrees: children, print_tree
 
 export
     #main types
@@ -23,7 +23,9 @@ export
     QuadOctSplitter,
     #admissibility
     StrongAdmissibilityStd,
-    WeakAdmissibilityStd
+    WeakAdmissibilityStd,
+    #convenience functions
+    print_tree
 
 const Maybe{T} = Union{Tuple{},T}
 

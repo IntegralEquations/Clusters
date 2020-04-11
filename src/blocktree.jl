@@ -41,7 +41,7 @@ Construct a `BlockTree`, and assign to each node a value `admissible` depending 
 
 The following signature: `admissible_fun(::BlockTree) --> Bool`
 """
-function BlockTree(row_cluster::ClusterTree, col_cluster::ClusterTree, adm_fun=DEFAULT_PARAMETES.admissibility)
+function BlockTree(row_cluster::ClusterTree, col_cluster::ClusterTree, adm_fun=DEFAULT_PARAMETERS.admissibility)
     #build root
     root        = BlockTree(row_cluster,col_cluster,false,(),())
     # recurse

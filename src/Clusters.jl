@@ -30,7 +30,7 @@ export
 const Maybe{T} = Union{Tuple{},T}
 
 include("point.jl")
-include("hyperrectangle.jl")
+include("cuboid.jl")
 include("clustertree.jl")
 include("splitter.jl")
 include("blocktree.jl")

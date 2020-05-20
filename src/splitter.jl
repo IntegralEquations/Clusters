@@ -39,9 +39,11 @@ function _binary_split(cluster::ClusterTree,dir,pos,shrink=true)
         if pt in left_rec
             npts_left += 1
             perm_idxs[npts_left] = i
-        else
+        elseif pt in right_rec
             perm_idxs[length(cluster)-npts_right] = i
             npts_right += 1
+        else
+            error("points lost during splitting: check algorithm")
         end
     end
     perm[index_range]     = perm[perm_idxs]

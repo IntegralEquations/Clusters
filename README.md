@@ -1,17 +1,10 @@
 # Clusters.jl
 
-![Lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)<!--
+*Cluster trees needed for integral equations* 
+
 ![Lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)
-![Lifecycle](https://img.shields.io/badge/lifecycle-stable-green.svg)
-![Lifecycle](https://img.shields.io/badge/lifecycle-retired-orange.svg)
-![Lifecycle](https://img.shields.io/badge/lifecycle-archived-red.svg)
-![Lifecycle](https://img.shields.io/badge/lifecycle-dormant-blue.svg) -->
-[![Build Status](https://travis-ci.com/maltezfaria/Clusters.jl.svg?branch=master)](https://travis-ci.com/maltezfaria/Clusters.jl)
-[![codecov.io](http://codecov.io/github/maltezfaria/Clusters.jl/coverage.svg?branch=master)](http://codecov.io/github/maltezfaria/Clusters.jl?branch=master)
-<!--
-[![Documentation](https://img.shields.io/badge/docs-stable-blue.svg)](https://maltezfaria.github.io/Clusters.jl/stable)
-[![Documentation](https://img.shields.io/badge/docs-master-blue.svg)](https://maltezfaria.github.io/Clusters.jl/dev)
--->
+![CI](https://github.com/IntegralEquations/Clusters/workflows/CI/badge.svg?branch=master)
+
 
 ## Installation
 Install from the Pkg REPL:

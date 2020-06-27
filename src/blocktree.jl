@@ -50,7 +50,9 @@ function BlockTree(row_cluster::ClusterTree, col_cluster::ClusterTree, adm_fun=D
 end
 
 function _build_block_tree!(adm_fun, current_node::T) where {T}
-    if adm_fun(current_node)
+    if isleaf(rowcluster(current_node)) || isleaf(colcluster(current_node))
+        current_node.admissible = false
+    elseif adm_fun(current_node)
         current_node.admissible = true
     else
         current_node.admissible = false

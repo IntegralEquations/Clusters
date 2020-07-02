@@ -15,7 +15,6 @@ function Cuboid(lc::Point{N,T},hc::Point{N,S}) where {N,T,S}
     Cuboid(Point{N,TS}(lc),Point{N,TS}(hc))
 end
 
-
 Base.:(==)(h1::Cuboid, h2::Cuboid) = (h1.low_corner == h2.low_corner) && (h1.high_corner == h2.high_corner)
 Base.in(point,h::Cuboid)                   = all(h.high_corner .>= point .>= h.low_corner)
 Base.eltype(h::Cuboid{N,T}) where {N,T}    = T

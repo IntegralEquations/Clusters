@@ -39,7 +39,7 @@ Base.range(node::ClusterTree)  = node.index_range
 
 Construct a `ClusterTree` from the  given `data`.
 """
-function ClusterTree(data, splitter=DEFAULT_PARAMETERS.splitter; reorder=false)
+function ClusterTree(data::Vector{<:Point}, splitter=DEFAULT_PARAMETERS.splitter; reorder=false)
     if !reorder
         data = copy(data)
     end
@@ -51,8 +51,8 @@ function ClusterTree(data, splitter=DEFAULT_PARAMETERS.splitter; reorder=false)
     _build_cluster_tree!(root,splitter)
     return root
 end
-
-ClusterTree(data::Matrix, args...;kwargs...) = ClusterTree(matrix_to_points(data),args...;kwargs...)
+ClusterTree(data::Matrix, args...;kwargs...)                       = ClusterTree(matrix_to_points(data),args...;kwargs...)
+ClusterTree(data::Vector{<:NTuple}, args...;kwargs...) where {N,T} = ClusterTree(Point.(data),args...;kwargs...)
 
 function _build_cluster_tree!(current_node,splitter)
     if should_split(current_node,splitter)

@@ -3,13 +3,13 @@
 *Cluster trees needed for integral equations* 
 
 ![Lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)
-![CI](https://github.com/IntegralEquations/Clusters/workflows/CI/badge.svg?branch=master)
+![CI](https://github.com/maltezfaria/Clusters/workflows/CI/badge.svg?branch=master)
 
 
 ## Installation
 Install from the Pkg REPL:
 ```
-pkg> add https://github.com/IntegralEquations/Clusters
+pkg> add https://github.com/maltezfaria/Clusters
 ```
 
 ## Usage
